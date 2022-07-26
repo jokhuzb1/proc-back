@@ -15,6 +15,10 @@ database.connect((err) => {
 
 app.use('/products', productRouter)
 
+app.get('/', (req, res) => {
+  res.write("welcome to phone shop");
+});
+
 app.get('*', (req, res) => {
   res.status(404).json("Page not found")
 
