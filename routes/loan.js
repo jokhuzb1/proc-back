@@ -38,14 +38,7 @@ router.put('/', async (req, res) => {
     console.log(err);
     res.status(500).send("Something went wrong")
   }
-  // const update = req.body;
-  // // res.status(200).json(req.body)
-  // Loan.findOneAndUpdate({ 'userId': req.body.userId }, update, (err, docs) => {
-  //   if (err) {
-  //     res.status(400).json("Error found during query");
-  //   }
-  //   res.status(200).json("Updated Details", docs)
-  // });
-})
+
+});
 
 export default router;
